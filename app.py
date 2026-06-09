@@ -88,7 +88,7 @@ if st.button("Predict Stress Level"):
     data_dict = data.iloc[0].to_dict()
 
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+        "https://student-stress-prediction-3jna.onrender.com/predict",
         json=data_dict
     )
 
